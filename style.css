@@ -28,7 +28,7 @@ main {
     background-color: rgb(255, 255, 255);
 
     div.image {
-      background-image: url(./flowers.png);
+      background-image: url(./images/flowers.png);
       height: 202px;
     }
 
@@ -63,11 +63,9 @@ main {
       }
     }
 
-    div.dinner {
+    div.list {
       display: flex;
-    }
-    div.walk {
-      display: flex;
+      width: 149px;
     }
   }
 }
