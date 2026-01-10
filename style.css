@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -30,6 +31,29 @@ main {
     div.image {
       background-image: url(./images/flowers.png);
       height: 202px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-end;
+      padding-right: 28px;
+      padding-bottom: 13px;
+
+      span,
+      h2 {
+        font-family: "Russo One", sans-serif;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 1);
+      }
+      span {
+        font-size: 18px;
+      }
+      h2 {
+        font-size: 48px;
+      }
+    }
+
+    div.text {
+      padding: 23px 28px;
     }
 
     div.note {
@@ -41,14 +65,19 @@ main {
         border-radius: 5px;
         background-color: rgba(235, 239, 242, 1);
         display: flex;
+        gap: 10px;
+        padding: 14.5px;
+        margin-bottom: 36px;
         img.yes {
           width: 24px;
           height: 24px;
+          padding-bottom: 3px;
         }
         p {
           font-weight: 400;
           font-size: 16px;
           color: rgba(136, 136, 136, 1);
+          width: 38px;
         }
       }
       button {
@@ -65,7 +94,27 @@ main {
 
     div.list {
       display: flex;
-      width: 149px;
+      justify-content: space-between;
+      margin-bottom: 24px;
+      div.text_two {
+        width: 149px;
+        p {
+          color: rgba(13, 13, 13, 1);
+          font-size: 18px;
+          font-weight: 500;
+          margin-bottom: 5px;
+        }
+        span {
+          font-size: 14px;
+          color: rgba(136, 136, 136, 1);
+          font-weight: 400;
+        }
+      }
+      div.buttons {
+        .red {
+          margin-left: 13px;
+        }
+      }
     }
   }
 }
