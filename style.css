@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
 body {
   margin: 0;
   padding: 0;
@@ -6,4 +8,59 @@ body {
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  height: 100vh;
+  background-color: rgb(238, 238, 238);
+
+  div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 296px;
+  }
+  div.card {
+    width: 430px;
+    height: 636px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+
+    div.image {
+      background-image: url(./flowers.png);
+      height: 202px;
+    }
+
+    div.note {
+      display: flex;
+      gap: 10px;
+      div.box {
+        width: 275px;
+        height: 49px;
+        border-radius: 5px;
+        background-color: rgba(235, 239, 242, 1);
+        display: flex;
+        img.yes {
+          width: 24px;
+          height: 24px;
+        }
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          color: rgba(136, 136, 136, 1);
+        }
+      }
+      button {
+        width: 88px;
+        height: 49px;
+        border-radius: 5px;
+        background-color: rgba(32, 238, 176, 1);
+        border: none;
+        font-size: 25px;
+        font-weight: 500;
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
 }
