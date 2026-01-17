@@ -65,23 +65,38 @@ main {
     }
 
     div.note {
-      display: flex;
-      gap: 10px;
       div.box {
-        width: 275px;
-        height: 49px;
-        border-radius: 5px;
-        background-color: rgba(235, 239, 242, 1);
-        display: flex;
-        gap: 10px;
-        padding: 14.5px;
-        margin-bottom: 36px;
+        position: relative;
+
+        form {
+          display: flex;
+          gap: 10px;
+        }
+        input {
+          width: 275px;
+          height: 49px;
+          border-radius: 5px;
+          background-color: rgba(235, 239, 242, 1);
+          margin-bottom: 36px;
+          border: none;
+          outline: none;
+          padding-left: 48px;
+          caret-color: rgb(146, 148, 150);
+          color: rgb(98, 99, 100);
+        }
+
+        div.circle {
+          position: absolute;
+          top: 12px;
+          left: 14px;
+        }
+
         img.yes {
           width: 24px;
           height: 24px;
           padding-bottom: 3px;
         }
-        p {
+        input::placeholder {
           font-weight: 400;
           font-size: 16px;
           color: rgba(136, 136, 136, 1);
@@ -99,6 +114,11 @@ main {
           height: 19px;
         }
       }
+    }
+
+    .note button:hover {
+      cursor: pointer;
+      background-color: rgb(38, 185, 141);
     }
 
     div.list {
